@@ -1,5 +1,4 @@
 body {
-		background-color: #36526E;
 }
 #main {
 	font-family: sans-serif;
@@ -9,12 +8,17 @@ body {
 	float:left;
 }
 
+p {
+	margin:0;
+}
+
 .row {
 	margin:0;
 }
 
 .emails {
-	margin:40px;
+	margin-top:30px;
+	margin-bottom:30px;
 }
 
 .email {
@@ -24,11 +28,13 @@ body {
 }
 
 .current .item {
-	background:rgba(206,206,240,.9);
+	background:rgba(230,230,250,.9);
 }
 
 .item {
 	cursor:pointer;
+	padding-top: 7px;
+	padding-bottom: 7px;
 }
 
 .item .sender {
@@ -41,10 +47,11 @@ body {
 
 .item .date {
 	margin-right: 20px;
+	text-align:right;
 }
 
 .email-content {
-	//display:none;
-	padding-top: 20px;
-	padding-top: 20px;
+	display:none;
+	padding-top: 10px;
+	padding-top: 10px;
 }
