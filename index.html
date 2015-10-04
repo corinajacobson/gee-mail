@@ -4,25 +4,31 @@
 		<link href="css/style.css" rel="stylesheet" media="screen">
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/JavaScript">
+
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-        	document.getElementById("subject").innerHTML = subject[0];        
-        	document.getElementById("body").innerHTML = body[0];
-        	document.getElementById("sender").innerHTML = sender[0];
-        	document.getElementById("date").innerHTML = getRandomDate();
-      };
+
     </script>
 	</head>
 	<body>
 		<div class="container" id="main">
-			<h1>Gee-Mails</h1>
-			<div id="heading">
-				<div id="subject" class="inline"></div>
-				<div id="sender" class="inline"></div>
-				<div id="date" class="inline"></div>
+			
+			<div class="emails container">
+				<div class="email current">
+					<div class="item row">
+						<div class="col-xs-6">	
+								<h1 class="subject-line">More treats plz</h1>
+						</div>
+						<div class="col-xs-3">
+							<p class="sender">Zuko</p>
+						</div>
+						<div class="col-xs-3"><p class="date">Oct 4</p></div>
+						</div>
+					</div>	
+
+				</div>
 			</div>
-			<div id="body"></div>
 		</div>
 	</body>
 </html>
