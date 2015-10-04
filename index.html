@@ -8,12 +8,20 @@
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
+        	var main = function() {
+        		$('.email').click(function() {
+        			$('.email').removeClass('current');
+        			$('.description').hide();
 
+        			$(this).addClass('current');
+        			$(this).children('.description').show();
+        		}); ();
+        	}
     	</script>
 	</head>
 	<body>
 		<div class="container" id="main">
-			
+			<h1>GeeMails</h1>
 			<div class="emails container">
 				<div class="email current">
 					<div class="item row">
@@ -24,16 +32,14 @@
 							<h1 class="subject-line">More treats plz</h1>
 						</div>
 						<div class="col-xs-3"><p class="date">Oct 4</p></div>
-						</div>
 					</div>	
 					<div class="email-content row">
-						<div class="col=xs=3">&nbsp;</div>
-						<div class="col-sx-6">
-							<p>We're out of greenies yo.</p>
-						</div>
-						<div class="col=xs=3">&nbsp;</div>
+						<div class="col-xs-3">&nbsp;</div>
+						<div class="col-xs-6"><p>We're out of greenies yo.</p></div>
+						<div class="col-xs-3">&nbsp;</div>
 					</div>
 				</div>
+
 
 				<div class="email">
 					<div class="item row">
@@ -41,17 +47,16 @@
 							<p class="sender">Kamalei</p>
 						</div>
 						<div class="col-xs-6">	
-							<h1 class="subject-line">Emergency</h1>
+							<h1 class="subject-line">Need to go grocery shopping</h1>
 						</div>
 						<div class="col-xs-3"><p class="date">Oct 4</p></div>
-						</div>
 					</div>	
 					<div class="email-content row">
-						<div class="col=xs=3">&nbsp;</div>
-						<div class="col-sx-6">
-							<p>There are no burritos</p>
+						<div class="col-xs-3">&nbsp;</div>
+						<div class="col-xs-6">
+							<p>Need orange juice</p>
 						</div>
-						<div class="col=xs=3">&nbsp;</div>
+						<div class="col-xs-3">&nbsp;</div>
 					</div>
 				</div>
 
@@ -61,20 +66,21 @@
 							<p class="sender">Hiro</p>
 						</div>
 						<div class="col-xs-6">	
-							<h1 class="subject-line">MineCraft!!!1!</h1>
+							<h1 class="subject-line">Minecraft!!!1!</h1>
 						</div>
 						<div class="col-xs-3"><p class="date">Oct 4</p></div>
-						</div>
 					</div>	
 					<div class="email-content row">
-						<div class="col=xs=3">&nbsp;</div>
-						<div class="col-sx-6">
-							<p>LeT's pLaY.</p>
+						<div class="col-xs-3">&nbsp;</div>
+						<div class="col-xs-6">
+							<p>Let's play!!</p>
 						</div>
-						<div class="col=xs=3">&nbsp;</div>
+						<div class="col-xs-3">&nbsp;</div>
 					</div>
 				</div>
-			</div>
-		</div>
+
+
+			</div> <!-- end emails container -->
+		</div> <!-- end main -->
 	</body>
 </html>
