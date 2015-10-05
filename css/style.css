@@ -1,13 +1,16 @@
 body {
-background-image: url('http://www.patsoy.com/p/2015/09/background-pattern-pt6rmrsr.jpg');
-
-}
-
-#main {
+	background-image: url('http://www.thenerdyhalf.com/wp-content/uploads/2015/10/swirl_pattern.png');
 	font-family: sans-serif;
-	background-color: white;
 
 }
+#main {
+	background-color: white;
+}
+h1 {
+	text-align: center;
+	background-color: white;
+}
+
 p {
 	margin:0;
 }
@@ -24,9 +27,6 @@ p {
 .email {
 	color: #222;
 	background: rgba(245,245,245,.8);
-	border-spacing: 2px;
-	border-color: gray;
-	border-bottom: 1px #e5e5e5 solid;
 }
 
 .current .item {
@@ -40,12 +40,11 @@ p {
 }
 
 .item .sender {
-	margin-left:20px;
-	margin-top: 20px;
+	padding-left:30px;
 }
 
 .item .subject-line {
-	font-weight: bold;
+
 }
 
 .item .date {
@@ -58,9 +57,9 @@ p {
 
 .email-content {
 	/*display:none;*/
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(0,255,255,.7);
 }
 
-.item h1 {
+.item h2 {
 	font-size: 18px	
 }

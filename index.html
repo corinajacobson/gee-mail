@@ -1,21 +1,13 @@
+<!doctype html>
 <html>
-	<head>
-		<script src="js/mail-generator.js"></script>
+	<head lang="en">
+		<title>GeeMails</title><script src="js/mail-generator.js" type="text/JavaScript"></script>
 		<link href="css/style.css" rel="stylesheet" media="screen">
     	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" >
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     	<script type="text/JavaScript">
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
         // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-        	var main = function() {
-        		$('.email').click(function() {
-        			$('.email').removeClass('current');
-        			$('.description').hide();
-
-        			$(this).addClass('current');
-        			$(this).children('.description').show();
-        		}); ();
         	}
     	</script>
 	</head>
@@ -23,64 +15,35 @@
 		<div class="container" id="main">
 			<h1>GeeMails</h1>
 			<div class="emails container">
-				<div class="email current">
+				<!-- new email copy here --><div class="email">
 					<div class="item row">
-						<div class="col-xs-3">
-							<p class="sender">Zuko</p>
-						</div>
-						<div class="col-xs-6">	
-							<h1 class="subject-line">More treats plz</h1>
-						</div>
+
+					<div class="email-content row"><div class="col-xs-3">&nbsp;</div><div class="col-xs-6"><p>We're out of greenies yo.</p></div><div class="col-xs-3">&nbsp;</div>
+					</div>
+				</div><!-- new email copy till here -->
+
+				<!-- new email copy here --><div class="email">
+					<div class="item row">
+						<div class="col-xs-3"><p class="sender">Zuko</p></div>
+						<div class="col-xs-6"><h2 class="subject-line">More treats plz</h2></div>
 						<div class="col-xs-3"><p class="date">Oct 4</p></div>
 					</div>	
-					<div class="email-content row">
-						<div class="col-xs-3">&nbsp;</div>
-						<div class="col-xs-6"><p>We're out of greenies yo.</p></div>
-						<div class="col-xs-3">&nbsp;</div>
+					<div class="email-content row"><div class="col-xs-3">&nbsp;</div><div class="col-xs-6"><p>We're out of greenies yo.</p></div><div class="col-xs-3">&nbsp;</div>
 					</div>
-				</div>
+				</div><!-- new email copy till here -->
 
-
-				<div class="email">
+				<!-- new email copy here --><div class="email">
 					<div class="item row">
-						<div class="col-xs-3">
-							<p class="sender">Kamalei</p>
-						</div>
-						<div class="col-xs-6">	
-							<h1 class="subject-line">Need to go grocery shopping</h1>
-						</div>
+						<div class="col-xs-3"><p class="sender">Zuko</p></div>
+						<div class="col-xs-6"><h2 class="subject-line">More treats plz</h2></div>
 						<div class="col-xs-3"><p class="date">Oct 4</p></div>
 					</div>	
-					<div class="email-content row">
-						<div class="col-xs-3">&nbsp;</div>
-						<div class="col-xs-6">
-							<p>Need orange juice</p>
-						</div>
-						<div class="col-xs-3">&nbsp;</div>
+					<div class="email-content row"><div class="col-xs-3">&nbsp;</div><div class="col-xs-6"><p>We're out of greenies yo.</p></div><div class="col-xs-3">&nbsp;</div>
 					</div>
-				</div>
-
-				<div class="email">
-					<div class="item row">
-						<div class="col-xs-3">
-							<p class="sender">Hiro</p>
-						</div>
-						<div class="col-xs-6">	
-							<h1 class="subject-line">Minecraft!!!1!</h1>
-						</div>
-						<div class="col-xs-3"><p class="date">Oct 4</p></div>
-					</div>	
-					<div class="email-content row">
-						<div class="col-xs-3">&nbsp;</div>
-						<div class="col-xs-6">
-							<p>Let's play!!</p>
-						</div>
-						<div class="col-xs-3">&nbsp;</div>
-					</div>
-				</div>
-
-
+				</div><!-- new email copy till here -->
 			</div> <!-- end emails container -->
 		</div> <!-- end main -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+			    <script src="app.js" type="text/JavaScript"></script>
 	</body>
 </html>
