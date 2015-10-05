@@ -1,65 +1,62 @@
 body {
 	background-image: url('http://www.thenerdyhalf.com/wp-content/uploads/2015/10/swirl_pattern.png');
 	font-family: sans-serif;
+}
 
-}
 #main {
-	background-color: white;
-}
-h1 {
-	text-align: center;
-	background-color: white;
+	margin:100px;
 }
 
 p {
 	margin:0;
 }
-
 .row {
-	margin:0;
-}
+  margin: 0;
+  }
 
-.emails {
-	margin-top:30px;
-	margin-bottom:30px;
-}
-
+ .emails {
+  	margin-top: 30px;
+  	margin-bottom:30px;
+  }
 .email {
-	color: #222;
-	background: rgba(245,245,245,.8);
+	color:#222;
+	background: rgba(255,255,255,.9);
+	border-spacing: 2px;
+	border-color:#222;
+	font-family:sans-serif;
+	border-bottom: 1px #e5e5e5 solid;
 }
 
 .current .item {
-	background:rgba(0,102,153,.9);
+	background: rgba(100,100,100,.9);
 }
 
 .item {
 	cursor:pointer;
 	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-bottom: 70px;
 }
 
 .item .sender {
-	padding-left:30px;
+	margin: 20px;
+	float:left;
 }
 
-.item .subject-line {
-
+.item .subject {
+	float:left;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left: 400px;
+	margin-right: 300px;
 }
 
-.item .date {
-	margin-right: 20px;
-	margin-top: 20px;
-}
-.item .date {
-	text-align:center;
+.item .send-date {
+	margin: 20px;
+	text-align: right;
+	float:left;
 }
 
 .email-content {
-	/*display:none;*/
-	background-color: rgba(0,255,255,.7);
-}
-
-.item h2 {
-	font-size: 18px	
+	display:none;
+	padding: 10px
 }
