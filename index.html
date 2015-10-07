@@ -6,10 +6,24 @@
 		<link href="css/style.css" rel="stylesheet" media="screen">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
     	<script type="text/javascript">
-	      //window.onload = function(){
+	      window.onload = function(){
 	        // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
 	        // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-			var main = function() {
+
+	        var main=function(){
+	        	for(var i=0; i<window.GeeMails.length; i++)
+	        		refresh(window.geemails[i])
+
+	        } };
+
+	        function refresh(emails) {
+	        	var line = $('<ul>').addClass('item').append() {
+	        		$('<li>').addClass('send-date').text(mail[date]), $('<div>').addClass('sender').text(mail[sender]), $('<div>').addCLass('subject').text(mail[subject]), $('<div>').addClass("email-content").text(mail[body])
+
+	        	}
+	        }
+
+			var showCurrent = function() {
 			    $('.email').click(function() {
 			    $('.email').removeClass('current');
 			    $('.email-content').hide();
@@ -18,40 +32,43 @@
 			});
 			}
 
-	        	$(document).ready(main);
+	        	$(document).ready(showCurrent);
+
+	        };		
         </script>
 	</head>
 	<body>
 		<div class="container" id="main">
 			<h1>GeeMails</h1>
-			<div class="emails container">
-				<!-- new email copy here --><div class="email">
+			<button class="refresh-button">Refresh</button>
+			<ul class="emails container">
+				<!-- new email copy here --><li class="email">
 					<div class="item row">
-							<h2 class="subject">I need greenies</h2>
-							<p class="sender">Zuko</p>
-							<p class="send-date">Oct 5</p>
+							<ul><li><h2 class="subject">I need greenies</h2></li>
+							<li><p class="sender">Zuko</p></li>
+							<li><p class="send-date">Oct 5</p></li></ul>
 					</div>
 					<div class="row">
 						<div class="email-content">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
         			</div>
-				</div><!-- new email copy till here -->
+				</li><!-- new email copy till here -->
 
-				<!-- new email copy here --><div class="email">
+				<!-- new email copy here --><li class="email">
 					<div class="item row">
-							<h2 class="subject">Grocery Shopping</h2>
-							<p class="sender">Kamalei</p>
-							<p class="send-date">Oct 5</p>
+							<ul><li><h2 class="subject">I need greenies</h2></li>
+							<li><p class="sender">Zuko</p></li>
+							<li><p class="send-date">Oct 5</p></li></ul>
 					</div>
 					<div class="row">
 						<div class="email-content">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
         			</div>
-				</div><!-- new email copy till here -->
+				</li><!-- new email copy till here -->
 
-			</div> <!-- end emails container -->
+			</ul> <!-- end emails container -->
 		</div>
 	</body>
 </html>
