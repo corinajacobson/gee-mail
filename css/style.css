@@ -4,67 +4,43 @@ body {
 }
 
 #main {
-	margin:100px;
-	background-color: white;
 }
 
 p {
-	margin:0;
+
 }
-.row {
-  margin: 0;
-  }
 
  .emails {
-  	margin-top: 30px;
-  	margin-bottom:30px;
+
   }
 .email {
-	color:#222;
-	background: white;
-	border-spacing: 2px;
-	border-color:#222;
-	font-family:sans-serif;
-	border-bottom: 1px #e5e5e5 solid;
+
 }
 
 .current .item {
-	background: gray;
+
 }
 
 .item {
-	cursor:pointer;
-	padding-top: 5px;
-	padding-bottom: 70px;
+
 }
 
 .item .sender {
-	margin: 20px;
-	margin-left: 300px;
-	margin-right: 300px;
-	float:left;
+
 }
 
 .item .subject {
-	float:left;
-	margin-top:10px;
-	margin-bottom:10px;
-	margin-left: 100px;
-	font-size:14px;
 
 }
 
 .item .send-date {
-	margin: 10px;
-	text-align: right;
-	float:right;
+
 }
 
 .email-content {
-	display:none;
-	padding: 10px
+
 }
-h1 {
-	text-align: center;
-	padding-top: 20px;
+
+ul {
+
 }
