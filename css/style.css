@@ -1,46 +1,52 @@
 body {
-	background-image: url('http://www.thenerdyhalf.com/wp-content/uploads/2015/10/swirl_pattern.png');
-	font-family: sans-serif;
+    background-image: url('http://www.thenerdyhalf.com/wp-content/uploads/2015/10/swirl_pattern.png');
+    font-family: sans-serif;
+    font-size:0.9em;
 }
-
-#main {
+.header {
+    margin:auto;
+    text-align: center;
+    font:1.3em bold;
+    background-color: #fff;
+    width:90%;
 }
-
-p {
-
+.container {
+    margin:auto;
+    background-color:rgba(153, 204, 255, .5);
+    width:85%;
 }
-
- .emails {
-
-  }
+#mail {
+    list-style: none;
+}
 .email {
-
+    border-bottom: 1px solid #006699;
+    padding:5px;
+    cursor:pointer;
 }
-
-.current .item {
-
+.sender {
+    float:left;
+    width:30%;
+    padding:4px;
 }
-
-.item {
-
+.subject {
+    float:left;
+    width:30%;
+    padding: 4px;
 }
-
-.item .sender {
-
+.date {
+    padding:4px;
 }
-
-.item .subject {
-
-}
-
-.item .send-date {
-
-}
-
 .email-content {
-
+    clear: both;
+    padding:5px;
+    background-color:rgba(250, 250, 250, .6);
 }
-
-ul {
-
+.read {
+    background-color: rgba(51, 102, 153, .3);
 }
+.current {
+    background-color: rgba(255, 255, 51, .5);
+}
+.inbox-count{
+	list-style: none;
+	}}
