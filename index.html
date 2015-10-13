@@ -10,14 +10,11 @@
             window.onload = function() {
                 // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
                 // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-
                 var main = function() {
                     for (var i = 0; i < window.geemails.length; i++) {
                         refresh(window.geemails[i]);
                     }
-
                 };
-
                 function refresh(mail) {
                     var line = $('<li>').addClass('email').prepend(
                     $('<div>').addClass('subject').text(mail['subject']),
@@ -26,7 +23,7 @@
                     $('<p>').addClass("email-content").text(mail['body']).hide());
 
                     line.click(function() {
-                        $('.current').children('.email-content').toggle();
+                        $('.current').children('.email-content').hide();
                         $('.current').addClass('read');
                         $('.current').removeClass('current');
                         $(this).addClass('current');
@@ -35,21 +32,16 @@
                     $('#mail').prepend(line);
                     $('#inbox-count').text($('#mail').children().length);
                 };
-
                 $(document).ready(main);
                 setInterval(function() {
                     refresh(getNewMessage());
                 }, 50000);
-
-
-
             };
         </script>
     </head>
-    
     <body>
         <div class="header">
-            <h1>GeeMails</h1><p>Inbox: <div id="inbox-count"></div> messages</p></div>
+            <h1>GeeMails</h1><p>Inbox: <span id="inbox-count"></span> messages</p></div>
         <div class="container" id="main">
             <ul class="mail" id="mail"></ul>
         </div>
